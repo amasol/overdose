@@ -1,4 +1,9 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Overdose\LessonTwo\Api\Data\FriendInterface" type="Overdose\LessonTwo\Model\Friends"/>
     <preference for="Overdose\LessonTwo\Api\FriendRepositoryInterface" type="Overdose\LessonTwo\Model\FriendRepository"/>
+
+    <type name="Overdose\LessonTwo\Model\ResourceModel\Collection\LessonThree">
+        <plugin name="before-load-LessonThree-collectin" type="Overdose\LessonTwo\Plugin\Overdose\LessonTwo\Model\ResourceModel\Collection\LessonThree" />
+    </type>
+
 </config>
