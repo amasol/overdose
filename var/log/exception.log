@@ -1,0 +1,430 @@
+[2021-01-14 12:41:31] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-14 12:41:53] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-14 12:54:50] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-14 12:58:09] main.CRITICAL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist, query was: INSERT INTO `search_tmp_60003fe10ca523_09968299` SELECT `main_select`.`entity_id`, SUM(score) AS `relevance` FROM (SELECT DISTINCT  `eav_index`.`entity_id`, (((0)) * 1 + LEAST((MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE)), 1000000) * POW(2, search_weight)) AS `score` FROM `catalog_product_index_eav` AS `eav_index`
+ INNER JOIN `catalogsearch_fulltext_scope1` AS `search_index` ON eav_index.entity_id = search_index.entity_id
+ INNER JOIN `catalog_eav_attribute` AS `cea` ON search_index.attribute_id = cea.attribute_id
+ INNER JOIN `cataloginventory_stock_status` AS `stock_index` ON stock_index.product_id = eav_index.entity_id AND `stock_index`.`website_id` = 0 AND `stock_index`.`stock_status` = 1 AND `stock_index`.`stock_id` = 1 WHERE (eav_index.store_id = '1') AND (`eav_index`.`attribute_id` = 99 AND `eav_index`.`value` in ('3', '4') AND `eav_index`.`store_id` = '1') AND (MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE))) AS `main_select` GROUP BY `entity_id` ORDER BY `relevance` DESC, `entity_id` DESC
+ LIMIT 10000 {"report_id":"1e27e5a2dade6790973771a56a7ded97c811ef4218d13434a47827b3580d2ab6","exception":"[object] (Zend_Db_Statement_Exception(code: 42): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist, query was: INSERT INTO `search_tmp_60003fe10ca523_09968299` SELECT `main_select`.`entity_id`, SUM(score) AS `relevance` FROM (SELECT DISTINCT  `eav_index`.`entity_id`, (((0)) * 1 + LEAST((MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE)), 1000000) * POW(2, search_weight)) AS `score` FROM `catalog_product_index_eav` AS `eav_index`
+ INNER JOIN `catalogsearch_fulltext_scope1` AS `search_index` ON eav_index.entity_id = search_index.entity_id
+ INNER JOIN `catalog_eav_attribute` AS `cea` ON search_index.attribute_id = cea.attribute_id
+ INNER JOIN `cataloginventory_stock_status` AS `stock_index` ON stock_index.product_id = eav_index.entity_id AND `stock_index`.`website_id` = 0 AND `stock_index`.`stock_status` = 1 AND `stock_index`.`stock_id` = 1 WHERE (eav_index.store_id = '1') AND (`eav_index`.`attribute_id` = 99 AND `eav_index`.`value` in ('3', '4') AND `eav_index`.`store_id` = '1') AND (MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE))) AS `main_select` GROUP BY `entity_id` ORDER BY `relevance` DESC, `entity_id` DESC
+ LIMIT 10000 at /var/www/html/magento2/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:110, PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist at /var/www/html/magento2/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:91)"} []
+[2021-01-14 12:58:21] main.CRITICAL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist, query was: INSERT INTO `search_tmp_60003fed147a18_16778903` SELECT `main_select`.`entity_id`, SUM(score) AS `relevance` FROM (SELECT DISTINCT  `eav_index`.`entity_id`, (((0)) * 1 + LEAST((MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE)), 1000000) * POW(2, search_weight)) AS `score` FROM `catalog_product_index_eav` AS `eav_index`
+ INNER JOIN `catalogsearch_fulltext_scope1` AS `search_index` ON eav_index.entity_id = search_index.entity_id
+ INNER JOIN `catalog_eav_attribute` AS `cea` ON search_index.attribute_id = cea.attribute_id
+ INNER JOIN `cataloginventory_stock_status` AS `stock_index` ON stock_index.product_id = eav_index.entity_id AND `stock_index`.`website_id` = 0 AND `stock_index`.`stock_status` = 1 AND `stock_index`.`stock_id` = 1 WHERE (eav_index.store_id = '1') AND (`eav_index`.`attribute_id` = 99 AND `eav_index`.`value` in ('3', '4') AND `eav_index`.`store_id` = '1') AND (MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE))) AS `main_select` GROUP BY `entity_id` ORDER BY `relevance` DESC, `entity_id` DESC
+ LIMIT 10000 {"report_id":"96ea8fa5f502da442f8ce48376482b5993d19063f8ec90dd2821a407f3ea759e","exception":"[object] (Zend_Db_Statement_Exception(code: 42): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist, query was: INSERT INTO `search_tmp_60003fed147a18_16778903` SELECT `main_select`.`entity_id`, SUM(score) AS `relevance` FROM (SELECT DISTINCT  `eav_index`.`entity_id`, (((0)) * 1 + LEAST((MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE)), 1000000) * POW(2, search_weight)) AS `score` FROM `catalog_product_index_eav` AS `eav_index`
+ INNER JOIN `catalogsearch_fulltext_scope1` AS `search_index` ON eav_index.entity_id = search_index.entity_id
+ INNER JOIN `catalog_eav_attribute` AS `cea` ON search_index.attribute_id = cea.attribute_id
+ INNER JOIN `cataloginventory_stock_status` AS `stock_index` ON stock_index.product_id = eav_index.entity_id AND `stock_index`.`website_id` = 0 AND `stock_index`.`stock_status` = 1 AND `stock_index`.`stock_id` = 1 WHERE (eav_index.store_id = '1') AND (`eav_index`.`attribute_id` = 99 AND `eav_index`.`value` in ('3', '4') AND `eav_index`.`store_id` = '1') AND (MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE))) AS `main_select` GROUP BY `entity_id` ORDER BY `relevance` DESC, `entity_id` DESC
+ LIMIT 10000 at /var/www/html/magento2/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:110, PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist at /var/www/html/magento2/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:91)"} []
+[2021-01-14 12:58:47] main.CRITICAL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist, query was: INSERT INTO `search_tmp_60004007b35cb0_26820651` SELECT `main_select`.`entity_id`, SUM(score) AS `relevance` FROM (SELECT DISTINCT  `eav_index`.`entity_id`, (((0)) * 1 + LEAST((MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE)), 1000000) * POW(2, search_weight)) AS `score` FROM `catalog_product_index_eav` AS `eav_index`
+ INNER JOIN `catalogsearch_fulltext_scope1` AS `search_index` ON eav_index.entity_id = search_index.entity_id
+ INNER JOIN `catalog_eav_attribute` AS `cea` ON search_index.attribute_id = cea.attribute_id
+ INNER JOIN `cataloginventory_stock_status` AS `stock_index` ON stock_index.product_id = eav_index.entity_id AND `stock_index`.`website_id` = 0 AND `stock_index`.`stock_status` = 1 AND `stock_index`.`stock_id` = 1 WHERE (eav_index.store_id = '1') AND (`eav_index`.`attribute_id` = 99 AND `eav_index`.`value` in ('3', '4') AND `eav_index`.`store_id` = '1') AND (MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE))) AS `main_select` GROUP BY `entity_id` ORDER BY `relevance` DESC, `entity_id` DESC
+ LIMIT 10000 {"report_id":"90d1231deb9a84f75d5fe38beb41eb5755356bf0d23dd911262689805f5db7c5","exception":"[object] (Zend_Db_Statement_Exception(code: 42): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist, query was: INSERT INTO `search_tmp_60004007b35cb0_26820651` SELECT `main_select`.`entity_id`, SUM(score) AS `relevance` FROM (SELECT DISTINCT  `eav_index`.`entity_id`, (((0)) * 1 + LEAST((MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE)), 1000000) * POW(2, search_weight)) AS `score` FROM `catalog_product_index_eav` AS `eav_index`
+ INNER JOIN `catalogsearch_fulltext_scope1` AS `search_index` ON eav_index.entity_id = search_index.entity_id
+ INNER JOIN `catalog_eav_attribute` AS `cea` ON search_index.attribute_id = cea.attribute_id
+ INNER JOIN `cataloginventory_stock_status` AS `stock_index` ON stock_index.product_id = eav_index.entity_id AND `stock_index`.`website_id` = 0 AND `stock_index`.`stock_status` = 1 AND `stock_index`.`stock_id` = 1 WHERE (eav_index.store_id = '1') AND (`eav_index`.`attribute_id` = 99 AND `eav_index`.`value` in ('3', '4') AND `eav_index`.`store_id` = '1') AND (MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE))) AS `main_select` GROUP BY `entity_id` ORDER BY `relevance` DESC, `entity_id` DESC
+ LIMIT 10000 at /var/www/html/magento2/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:110, PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist at /var/www/html/magento2/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:91)"} []
+[2021-01-14 12:59:30] main.CRITICAL: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist, query was: INSERT INTO `search_tmp_600040325fe941_99098704` SELECT `main_select`.`entity_id`, SUM(score) AS `relevance` FROM (SELECT DISTINCT  `eav_index`.`entity_id`, (((0)) * 1 + LEAST((MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE)), 1000000) * POW(2, search_weight)) AS `score` FROM `catalog_product_index_eav` AS `eav_index`
+ INNER JOIN `catalogsearch_fulltext_scope1` AS `search_index` ON eav_index.entity_id = search_index.entity_id
+ INNER JOIN `catalog_eav_attribute` AS `cea` ON search_index.attribute_id = cea.attribute_id
+ INNER JOIN `cataloginventory_stock_status` AS `stock_index` ON stock_index.product_id = eav_index.entity_id AND `stock_index`.`website_id` = 0 AND `stock_index`.`stock_status` = 1 AND `stock_index`.`stock_id` = 1 WHERE (eav_index.store_id = '1') AND (`eav_index`.`attribute_id` = 99 AND `eav_index`.`value` in ('3', '4') AND `eav_index`.`store_id` = '1') AND (MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE))) AS `main_select` GROUP BY `entity_id` ORDER BY `relevance` DESC, `entity_id` DESC
+ LIMIT 10000 {"report_id":"d56a02c151c522541a4cebd71fe479d68f50f76372063630d7c613f936df40d8","exception":"[object] (Zend_Db_Statement_Exception(code: 42): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist, query was: INSERT INTO `search_tmp_600040325fe941_99098704` SELECT `main_select`.`entity_id`, SUM(score) AS `relevance` FROM (SELECT DISTINCT  `eav_index`.`entity_id`, (((0)) * 1 + LEAST((MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE)), 1000000) * POW(2, search_weight)) AS `score` FROM `catalog_product_index_eav` AS `eav_index`
+ INNER JOIN `catalogsearch_fulltext_scope1` AS `search_index` ON eav_index.entity_id = search_index.entity_id
+ INNER JOIN `catalog_eav_attribute` AS `cea` ON search_index.attribute_id = cea.attribute_id
+ INNER JOIN `cataloginventory_stock_status` AS `stock_index` ON stock_index.product_id = eav_index.entity_id AND `stock_index`.`website_id` = 0 AND `stock_index`.`stock_status` = 1 AND `stock_index`.`stock_id` = 1 WHERE (eav_index.store_id = '1') AND (`eav_index`.`attribute_id` = 99 AND `eav_index`.`value` in ('3', '4') AND `eav_index`.`store_id` = '1') AND (MATCH (data_index) AGAINST ('My* test* product*' IN BOOLEAN MODE))) AS `main_select` GROUP BY `entity_id` ORDER BY `relevance` DESC, `entity_id` DESC
+ LIMIT 10000 at /var/www/html/magento2/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:110, PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.catalogsearch_fulltext_scope1' doesn't exist at /var/www/html/magento2/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:91)"} []
+[2021-01-14 12:59:39] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-14 12:59:53] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-14 13:00:44] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-14 13:01:07] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-14 13:03:13] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-15 15:57:46] main.CRITICAL: Class Magento\User\Model\User\Interceptor does not exist {"report_id":"f2cb2d9165fc2a38558f86cf18502d1e05722adff053f2279f38c4aef0659159","exception":"[object] (ReflectionException(code: -1): Class Magento\\User\\Model\\User\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 15:57:48] main.CRITICAL: Class Magento\User\Model\User\Interceptor does not exist {"report_id":"f2cb2d9165fc2a38558f86cf18502d1e05722adff053f2279f38c4aef0659159","exception":"[object] (ReflectionException(code: -1): Class Magento\\User\\Model\\User\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 15:57:49] main.CRITICAL: Class Magento\User\Model\User\Interceptor does not exist {"report_id":"f2cb2d9165fc2a38558f86cf18502d1e05722adff053f2279f38c4aef0659159","exception":"[object] (ReflectionException(code: -1): Class Magento\\User\\Model\\User\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 15:57:49] main.CRITICAL: Class Magento\User\Model\User\Interceptor does not exist {"report_id":"f2cb2d9165fc2a38558f86cf18502d1e05722adff053f2279f38c4aef0659159","exception":"[object] (ReflectionException(code: -1): Class Magento\\User\\Model\\User\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 15:57:50] main.CRITICAL: Class Magento\User\Model\User\Interceptor does not exist {"report_id":"f2cb2d9165fc2a38558f86cf18502d1e05722adff053f2279f38c4aef0659159","exception":"[object] (ReflectionException(code: -1): Class Magento\\User\\Model\\User\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 15:57:50] main.CRITICAL: Class Magento\User\Model\User\Interceptor does not exist {"report_id":"f2cb2d9165fc2a38558f86cf18502d1e05722adff053f2279f38c4aef0659159","exception":"[object] (ReflectionException(code: -1): Class Magento\\User\\Model\\User\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 15:57:50] main.CRITICAL: Class Magento\User\Model\User\Interceptor does not exist {"report_id":"f2cb2d9165fc2a38558f86cf18502d1e05722adff053f2279f38c4aef0659159","exception":"[object] (ReflectionException(code: -1): Class Magento\\User\\Model\\User\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 15:57:50] main.CRITICAL: Class Magento\User\Model\User\Interceptor does not exist {"report_id":"f2cb2d9165fc2a38558f86cf18502d1e05722adff053f2279f38c4aef0659159","exception":"[object] (ReflectionException(code: -1): Class Magento\\User\\Model\\User\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:02:30] main.CRITICAL: Class Magento\User\Model\User\Interceptor does not exist {"report_id":"f2cb2d9165fc2a38558f86cf18502d1e05722adff053f2279f38c4aef0659159","exception":"[object] (ReflectionException(code: -1): Class Magento\\User\\Model\\User\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:02:31] main.CRITICAL: Class Magento\User\Model\User\Interceptor does not exist {"report_id":"f2cb2d9165fc2a38558f86cf18502d1e05722adff053f2279f38c4aef0659159","exception":"[object] (ReflectionException(code: -1): Class Magento\\User\\Model\\User\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:05:57] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:05:58] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:00] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:00] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:01] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:01] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:01] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:01] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:01] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:02] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:19] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:19] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:19] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:20] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:20] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:20] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:20] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:06:20] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:09:53] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:09:53] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:14:58] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:14:58] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:16:48] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:16:49] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:30:11] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-15 16:30:12] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-18 12:03:26] main.CRITICAL: Class Magento\Framework\App\Config\Initial\Reader\Proxy does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Config\\Initial\\Reader\\Proxy does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-18 12:20:01] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-18 12:20:09] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-19 13:31:29] main.CRITICAL: Class Magento\Config\Model\Config\Backend\Encrypted\Interceptor does not exist {"report_id":"d0d4cea764f28f16bef2fda697a979023e2d7b7c22e9cde78762627536d76a71","exception":"[object] (ReflectionException(code: -1): Class Magento\\Config\\Model\\Config\\Backend\\Encrypted\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-19 13:31:30] main.CRITICAL: Class Magento\Config\Model\Config\Backend\Encrypted\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Config\\Model\\Config\\Backend\\Encrypted\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-19 13:31:30] main.CRITICAL: Class Magento\Config\Model\Config\Backend\Encrypted\Interceptor does not exist {"report_id":"235b8616242bcf37e85942c3837fc1ea056c9a321970acf57e87411c98988ff9","exception":"[object] (ReflectionException(code: -1): Class Magento\\Config\\Model\\Config\\Backend\\Encrypted\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-19 13:31:30] main.CRITICAL: Class Magento\Config\Model\Config\Backend\Encrypted\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Config\\Model\\Config\\Backend\\Encrypted\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-19 13:31:34] main.CRITICAL: Class Magento\Config\Model\Config\Backend\Encrypted\Interceptor does not exist {"report_id":"d0d4cea764f28f16bef2fda697a979023e2d7b7c22e9cde78762627536d76a71","exception":"[object] (ReflectionException(code: -1): Class Magento\\Config\\Model\\Config\\Backend\\Encrypted\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-19 13:31:34] main.CRITICAL: Class Magento\Config\Model\Config\Backend\Encrypted\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Config\\Model\\Config\\Backend\\Encrypted\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-19 13:31:34] main.CRITICAL: Class Magento\Config\Model\Config\Backend\Encrypted\Interceptor does not exist {"report_id":"235b8616242bcf37e85942c3837fc1ea056c9a321970acf57e87411c98988ff9","exception":"[object] (ReflectionException(code: -1): Class Magento\\Config\\Model\\Config\\Backend\\Encrypted\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-19 13:31:34] main.CRITICAL: Class Magento\Config\Model\Config\Backend\Encrypted\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Config\\Model\\Config\\Backend\\Encrypted\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-19 13:39:00] main.CRITICAL: Class Magento\Framework\Session\Config\ConfigInterface\Proxy does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\Session\\Config\\ConfigInterface\\Proxy does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-19 13:39:00] main.CRITICAL: Class Magento\Framework\Session\Config\ConfigInterface\Proxy does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\Session\\Config\\ConfigInterface\\Proxy does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-21 16:27:55] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. {"report_id":"de2cf09242f15aa97ffe2da370b6872a515f82d6b7892132e43038b768ddd72d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-21 16:28:00] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. {"report_id":"de2cf09242f15aa97ffe2da370b6872a515f82d6b7892132e43038b768ddd72d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-21 16:31:51] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. {"report_id":"de2cf09242f15aa97ffe2da370b6872a515f82d6b7892132e43038b768ddd72d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-21 16:39:18] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-21 16:39:18] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-21 16:39:28] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. {"report_id":"de2cf09242f15aa97ffe2da370b6872a515f82d6b7892132e43038b768ddd72d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-21 16:40:17] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. {"report_id":"de2cf09242f15aa97ffe2da370b6872a515f82d6b7892132e43038b768ddd72d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-21 16:41:58] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. {"report_id":"de2cf09242f15aa97ffe2da370b6872a515f82d6b7892132e43038b768ddd72d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-21 16:42:46] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. {"report_id":"de2cf09242f15aa97ffe2da370b6872a515f82d6b7892132e43038b768ddd72d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-21 16:42:53] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. {"report_id":"de2cf09242f15aa97ffe2da370b6872a515f82d6b7892132e43038b768ddd72d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Learning/StatusColor/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+Extra content at the end of the document
+Line: 15
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-25 16:48:15] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:50:17] main.CRITICAL: URL key for specified store already exists. {"exception":"[object] (Magento\\UrlRewrite\\Model\\Exception\\UrlAlreadyExistsException(code: 0): URL key for specified store already exists. at /var/www/html/magento2/vendor/magento/module-url-rewrite/Model/Storage/DbStorage.php:304, Magento\\Framework\\Exception\\AlreadyExistsException(code: 0): URL key for specified store already exists. at /var/www/html/magento2/vendor/magento/module-url-rewrite/Model/Storage/DbStorage.php:337, Magento\\Framework\\DB\\Adapter\\DuplicateException(code: 1062): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'my-test-product.html-1' for key 'URL_REWRITE_REQUEST_PATH_STORE_ID', query was: INSERT  INTO `url_rewrite` (`redirect_type`,`is_autogenerated`,`metadata`,`description`,`entity_type`,`entity_id`,`request_path`,`target_path`,`store_id`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) at /var/www/html/magento2/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php:585, Zend_Db_Statement_Exception(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'my-test-product.html-1' for key 'URL_REWRITE_REQUEST_PATH_STORE_ID', query was: INSERT  INTO `url_rewrite` (`redirect_type`,`is_autogenerated`,`metadata`,`description`,`entity_type`,`entity_id`,`request_path`,`target_path`,`store_id`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) at /var/www/html/magento2/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:110, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'my-test-product.html-1' for key 'URL_REWRITE_REQUEST_PATH_STORE_ID' at /var/www/html/magento2/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:91)"} []
+[2021-01-25 16:50:17] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:50:50] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:54:56] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:55:14] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:55:47] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:56:19] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:56:50] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:57:23] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:57:53] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:58:11] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:58:28] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-25 16:59:08] temando.CRITICAL: "accountId" is required. Enter and try again. {"exception":"[object] (Magento\\Framework\\Exception\\InputException(code: 0): \"accountId\" is required. Enter and try again. at /var/www/html/magento2/vendor/magento/framework/Exception/InputException.php:91)"} []
+[2021-01-27 14:55:58] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-27 14:55:58] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-28 11:01:08] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-28 15:59:19] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. {"report_id":"fb16183c691f31565fd4125564fab930b4942314bd3edb4b7846752c270f285d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-28 16:01:29] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. {"report_id":"fb16183c691f31565fd4125564fab930b4942314bd3edb4b7846752c270f285d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-28 16:01:30] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. {"report_id":"fb16183c691f31565fd4125564fab930b4942314bd3edb4b7846752c270f285d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-28 16:01:30] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. {"report_id":"fb16183c691f31565fd4125564fab930b4942314bd3edb4b7846752c270f285d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-28 16:01:30] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. {"report_id":"fb16183c691f31565fd4125564fab930b4942314bd3edb4b7846752c270f285d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-28 16:07:11] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. {"report_id":"fb16183c691f31565fd4125564fab930b4942314bd3edb4b7846752c270f285d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-28 16:11:32] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. {"report_id":"fb16183c691f31565fd4125564fab930b4942314bd3edb4b7846752c270f285d","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-28 17:31:04] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. {"report_id":"af55b3d675afe9e7dc12acbaebdcedfa48b5a62dd836eb631f852293e817c5a4","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Hunters/NewCoupon/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+XML declaration allowed only at the start of the document
+Line: 2
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-28 17:32:11] main.CRITICAL: Class Magento\Framework\Session\Config\ConfigInterface\Proxy does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\Session\\Config\\ConfigInterface\\Proxy does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-29 11:58:37] main.CRITICAL: Class Hunters\NewCoupon\Model\CustomFactory does not exist {"report_id":"155303c760da3ffb07c29e9311a325049536a6350d3c6fa0b0639fbd20f8c642","exception":"[object] (ReflectionException(code: 0): Class Hunters\\NewCoupon\\Model\\CustomFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:43, ReflectionException(code: 0): Class Hunters\\NewCoupon\\Model\\CustomFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:36)"} []
+[2021-01-29 12:11:31] main.CRITICAL: Class Codextblog\Ordercolumn\Model\CustomFactory does not exist {"report_id":"cfb969f142f70b49e3820c6ca3faaf7bf06dec8f870eb0f8776b7ceb25513846","exception":"[object] (ReflectionException(code: 0): Class Codextblog\\Ordercolumn\\Model\\CustomFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:43, ReflectionException(code: 0): Class Codextblog\\Ordercolumn\\Model\\CustomFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:36)"} []
+[2021-01-29 12:19:14] main.CRITICAL: Class Codextblog\Ordercolumn\Model\CustomFactory does not exist {"report_id":"cfb969f142f70b49e3820c6ca3faaf7bf06dec8f870eb0f8776b7ceb25513846","exception":"[object] (ReflectionException(code: 0): Class Codextblog\\Ordercolumn\\Model\\CustomFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:43, ReflectionException(code: 0): Class Codextblog\\Ordercolumn\\Model\\CustomFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:36)"} []
+[2021-01-29 12:19:28] main.CRITICAL: Class Codextblog\Ordercolumn\Model\CustomFactory does not exist {"report_id":"cfb969f142f70b49e3820c6ca3faaf7bf06dec8f870eb0f8776b7ceb25513846","exception":"[object] (ReflectionException(code: 0): Class Codextblog\\Ordercolumn\\Model\\CustomFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:43, ReflectionException(code: 0): Class Codextblog\\Ordercolumn\\Model\\CustomFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:36)"} []
+[2021-01-29 12:19:34] main.CRITICAL: Class Codextblog\Ordercolumn\Model\CustomFactory does not exist {"report_id":"cfb969f142f70b49e3820c6ca3faaf7bf06dec8f870eb0f8776b7ceb25513846","exception":"[object] (ReflectionException(code: 0): Class Codextblog\\Ordercolumn\\Model\\CustomFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:43, ReflectionException(code: 0): Class Codextblog\\Ordercolumn\\Model\\CustomFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:36)"} []
+[2021-01-29 12:37:53] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Hunters/CustomCoupon/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+Opening and ending tag mismatch: columns line 2 and listing
+Line: 11
+
+EndTag: '</' not found
+Line: 12
+
+Verify the XML and try again. {"report_id":"dac330f67d8de4610b92661dff8c2d16b01a891a0f4c03e3432a040f1459ac89","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Hunters/CustomCoupon/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+Opening and ending tag mismatch: columns line 2 and listing
+Line: 11
+
+EndTag: '</' not found
+Line: 12
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-29 13:04:12] main.CRITICAL: The XML in file "/var/www/html/magento2/app/code/Hunters/CustomCoupon/view/adminhtml/ui_component/sales_order_grid.xml" is invalid:
+Opening and ending tag mismatch: columns line 2 and listing
+Line: 11
+
+EndTag: '</' not found
+Line: 12
+
+Verify the XML and try again. {"report_id":"10fd0bb46c4ef46a3b5284f879dc326f25688d7cbfdc756d5f36bb83c965b3c7","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): The XML in file \"/var/www/html/magento2/app/code/Hunters/CustomCoupon/view/adminhtml/ui_component/sales_order_grid.xml\" is invalid:
+Opening and ending tag mismatch: columns line 2 and listing
+Line: 11
+
+EndTag: '</' not found
+Line: 12
+
+Verify the XML and try again. at /var/www/html/magento2/vendor/magento/module-ui/Config/Reader.php:129)"} []
+[2021-01-29 13:07:02] main.CRITICAL: Class Hunters\CustomCoupon\Ui\Component\Listing\Column\Mycolumn does not exist {"report_id":"df4292c8d93a3a1f0124f5dd83d35c552126d0a641c1235883c32701890cd358","exception":"[object] (ReflectionException(code: -1): Class Hunters\\CustomCoupon\\Ui\\Component\\Listing\\Column\\Mycolumn does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-29 13:19:37] main.CRITICAL: Class Hunters\CustomCoupon\Ui\Component\Listing\Column does not exist {"report_id":"75e0f1d0c71f121b6c9b23e0a978c2e373ab72b7e58c1c83a985eae3c0236b77","exception":"[object] (ReflectionException(code: -1): Class Hunters\\CustomCoupon\\Ui\\Component\\Listing\\Column does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-01-29 13:25:50] main.CRITICAL: Class Hunters_CustomCoupon/Ui/Component/Listing/Column/Mycolumn/ does not exist {"report_id":"04dde0741c606102db0bedd767e2ca13c0e29da73d607600ff0d94f9c60d1bc7","exception":"[object] (ReflectionException(code: -1): Class Hunters_CustomCoupon/Ui/Component/Listing/Column/Mycolumn/ does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-02-01 12:03:19] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-02-01 15:17:11] main.CRITICAL: Class Magento\User\Model\User\Interceptor does not exist {"report_id":"485e792bbb57ff493f2e19cc3efac4fc05abf6a9c2dac4aea6dd9ef039111a56","exception":"[object] (ReflectionException(code: -1): Class Magento\\User\\Model\\User\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-02-01 15:48:19] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-02-01 17:23:11] main.CRITICAL: Class Magento\Framework\App\Http\Interceptor does not exist {"exception":"[object] (ReflectionException(code: -1): Class Magento\\Framework\\App\\Http\\Interceptor does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:26)"} []
+[2021-02-02 13:24:53] main.CRITICAL: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+MSP_ReCaptcha data: current version - 1.5.0, required version - 1.6.0
+Amazon_Core data: current version - 3.2.13, required version - 3.3.1
+Amazon_Login data: current version - 3.2.13, required version - 3.3.1
+Amazon_Payment data: current version - 3.2.13, required version - 3.3.1
+Dotdigitalgroup_Email data: current version - 3.3.0, required version - 4.1.0
+Dotdigitalgroup_Chat data: current version - none, required version - 1.0.0
+Klarna_Core data: current version - 5.2.2, required version - 5.2.3
+Klarna_Kp data: current version - 6.3.4, required version - 6.4.0
+Vertex_Tax data: current version - 100.4.0, required version - 100.5.1
+Vertex_AddressValidation data: current version - none, required version - 100.5.0
+Yotpo_Yotpo data: current version - 3.0.0, required version - 3.0.1 {"report_id":"193c8a12e06c15e9c24babe82ab86b820edfe3cc1b72b0cb92e34a24bcde1a9f","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Please upgrade your database: Run \"bin/magento setup:upgrade\" from the Magento root directory.
+The following modules are outdated:
+MSP_ReCaptcha data: current version - 1.5.0, required version - 1.6.0
+Amazon_Core data: current version - 3.2.13, required version - 3.3.1
+Amazon_Login data: current version - 3.2.13, required version - 3.3.1
+Amazon_Payment data: current version - 3.2.13, required version - 3.3.1
+Dotdigitalgroup_Email data: current version - 3.3.0, required version - 4.1.0
+Dotdigitalgroup_Chat data: current version - none, required version - 1.0.0
+Klarna_Core data: current version - 5.2.2, required version - 5.2.3
+Klarna_Kp data: current version - 6.3.4, required version - 6.4.0
+Vertex_Tax data: current version - 100.4.0, required version - 100.5.1
+Vertex_AddressValidation data: current version - none, required version - 100.5.0
+Yotpo_Yotpo data: current version - 3.0.0, required version - 3.0.1 at /var/www/html/magento2/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:66)"} []
+[2021-02-02 13:29:13] main.CRITICAL: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+MSP_ReCaptcha data: current version - 1.5.0, required version - 1.6.0
+Amazon_Core data: current version - 3.2.13, required version - 3.3.1
+Amazon_Login data: current version - 3.2.13, required version - 3.3.1
+Amazon_Payment data: current version - 3.2.13, required version - 3.3.1
+Dotdigitalgroup_Email data: current version - 3.3.0, required version - 4.1.0
+Dotdigitalgroup_Chat data: current version - none, required version - 1.0.0
+Klarna_Core data: current version - 5.2.2, required version - 5.2.3
+Klarna_Kp data: current version - 6.3.4, required version - 6.4.0
+Vertex_Tax data: current version - 100.4.0, required version - 100.5.1
+Vertex_AddressValidation data: current version - none, required version - 100.5.0
+Yotpo_Yotpo data: current version - 3.0.0, required version - 3.0.1 {"report_id":"193c8a12e06c15e9c24babe82ab86b820edfe3cc1b72b0cb92e34a24bcde1a9f","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Please upgrade your database: Run \"bin/magento setup:upgrade\" from the Magento root directory.
+The following modules are outdated:
+MSP_ReCaptcha data: current version - 1.5.0, required version - 1.6.0
+Amazon_Core data: current version - 3.2.13, required version - 3.3.1
+Amazon_Login data: current version - 3.2.13, required version - 3.3.1
+Amazon_Payment data: current version - 3.2.13, required version - 3.3.1
+Dotdigitalgroup_Email data: current version - 3.3.0, required version - 4.1.0
+Dotdigitalgroup_Chat data: current version - none, required version - 1.0.0
+Klarna_Core data: current version - 5.2.2, required version - 5.2.3
+Klarna_Kp data: current version - 6.3.4, required version - 6.4.0
+Vertex_Tax data: current version - 100.4.0, required version - 100.5.1
+Vertex_AddressValidation data: current version - none, required version - 100.5.0
+Yotpo_Yotpo data: current version - 3.0.0, required version - 3.0.1 at /var/www/html/magento2/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:66)"} []
+[2021-02-02 13:29:19] main.CRITICAL: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+MSP_ReCaptcha data: current version - 1.5.0, required version - 1.6.0
+Amazon_Core data: current version - 3.2.13, required version - 3.3.1
+Amazon_Login data: current version - 3.2.13, required version - 3.3.1
+Amazon_Payment data: current version - 3.2.13, required version - 3.3.1
+Dotdigitalgroup_Email data: current version - 3.3.0, required version - 4.1.0
+Dotdigitalgroup_Chat data: current version - none, required version - 1.0.0
+Klarna_Core data: current version - 5.2.2, required version - 5.2.3
+Klarna_Kp data: current version - 6.3.4, required version - 6.4.0
+Vertex_Tax data: current version - 100.4.0, required version - 100.5.1
+Vertex_AddressValidation data: current version - none, required version - 100.5.0
+Yotpo_Yotpo data: current version - 3.0.0, required version - 3.0.1 {"report_id":"15b6281454e2417304d5a511c788bc84f65c2a8e5841932c6b11e0565a01782e","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Please upgrade your database: Run \"bin/magento setup:upgrade\" from the Magento root directory.
+The following modules are outdated:
+MSP_ReCaptcha data: current version - 1.5.0, required version - 1.6.0
+Amazon_Core data: current version - 3.2.13, required version - 3.3.1
+Amazon_Login data: current version - 3.2.13, required version - 3.3.1
+Amazon_Payment data: current version - 3.2.13, required version - 3.3.1
+Dotdigitalgroup_Email data: current version - 3.3.0, required version - 4.1.0
+Dotdigitalgroup_Chat data: current version - none, required version - 1.0.0
+Klarna_Core data: current version - 5.2.2, required version - 5.2.3
+Klarna_Kp data: current version - 6.3.4, required version - 6.4.0
+Vertex_Tax data: current version - 100.4.0, required version - 100.5.1
+Vertex_AddressValidation data: current version - none, required version - 100.5.0
+Yotpo_Yotpo data: current version - 3.0.0, required version - 3.0.1 at /var/www/html/magento2/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:66)"} []
+[2021-02-02 13:29:19] main.CRITICAL: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+MSP_ReCaptcha data: current version - 1.5.0, required version - 1.6.0
+Amazon_Core data: current version - 3.2.13, required version - 3.3.1
+Amazon_Login data: current version - 3.2.13, required version - 3.3.1
+Amazon_Payment data: current version - 3.2.13, required version - 3.3.1
+Dotdigitalgroup_Email data: current version - 3.3.0, required version - 4.1.0
+Dotdigitalgroup_Chat data: current version - none, required version - 1.0.0
+Klarna_Core data: current version - 5.2.2, required version - 5.2.3
+Klarna_Kp data: current version - 6.3.4, required version - 6.4.0
+Vertex_Tax data: current version - 100.4.0, required version - 100.5.1
+Vertex_AddressValidation data: current version - none, required version - 100.5.0
+Yotpo_Yotpo data: current version - 3.0.0, required version - 3.0.1 {"report_id":"15b6281454e2417304d5a511c788bc84f65c2a8e5841932c6b11e0565a01782e","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Please upgrade your database: Run \"bin/magento setup:upgrade\" from the Magento root directory.
+The following modules are outdated:
+MSP_ReCaptcha data: current version - 1.5.0, required version - 1.6.0
+Amazon_Core data: current version - 3.2.13, required version - 3.3.1
+Amazon_Login data: current version - 3.2.13, required version - 3.3.1
+Amazon_Payment data: current version - 3.2.13, required version - 3.3.1
+Dotdigitalgroup_Email data: current version - 3.3.0, required version - 4.1.0
+Dotdigitalgroup_Chat data: current version - none, required version - 1.0.0
+Klarna_Core data: current version - 5.2.2, required version - 5.2.3
+Klarna_Kp data: current version - 6.3.4, required version - 6.4.0
+Vertex_Tax data: current version - 100.4.0, required version - 100.5.1
+Vertex_AddressValidation data: current version - none, required version - 100.5.0
+Yotpo_Yotpo data: current version - 3.0.0, required version - 3.0.1 at /var/www/html/magento2/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:66)"} []
+[2021-02-02 13:29:52] main.CRITICAL: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+MSP_ReCaptcha data: current version - 1.5.0, required version - 1.6.0
+Amazon_Core data: current version - 3.2.13, required version - 3.3.1
+Amazon_Login data: current version - 3.2.13, required version - 3.3.1
+Amazon_Payment data: current version - 3.2.13, required version - 3.3.1
+Dotdigitalgroup_Email data: current version - 3.3.0, required version - 4.1.0
+Dotdigitalgroup_Chat data: current version - none, required version - 1.0.0
+Klarna_Core data: current version - 5.2.2, required version - 5.2.3
+Klarna_Kp data: current version - 6.3.4, required version - 6.4.0
+Vertex_Tax data: current version - 100.4.0, required version - 100.5.1
+Vertex_AddressValidation data: current version - none, required version - 100.5.0
+Yotpo_Yotpo data: current version - 3.0.0, required version - 3.0.1 {"report_id":"193c8a12e06c15e9c24babe82ab86b820edfe3cc1b72b0cb92e34a24bcde1a9f","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Please upgrade your database: Run \"bin/magento setup:upgrade\" from the Magento root directory.
+The following modules are outdated:
+MSP_ReCaptcha data: current version - 1.5.0, required version - 1.6.0
+Amazon_Core data: current version - 3.2.13, required version - 3.3.1
+Amazon_Login data: current version - 3.2.13, required version - 3.3.1
+Amazon_Payment data: current version - 3.2.13, required version - 3.3.1
+Dotdigitalgroup_Email data: current version - 3.3.0, required version - 4.1.0
+Dotdigitalgroup_Chat data: current version - none, required version - 1.0.0
+Klarna_Core data: current version - 5.2.2, required version - 5.2.3
+Klarna_Kp data: current version - 6.3.4, required version - 6.4.0
+Vertex_Tax data: current version - 100.4.0, required version - 100.5.1
+Vertex_AddressValidation data: current version - none, required version - 100.5.0
+Yotpo_Yotpo data: current version - 3.0.0, required version - 3.0.1 at /var/www/html/magento2/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:66)"} []
+[2021-02-02 14:02:14] main.CRITICAL: Class Magento\Sales\Model\ResourceModel\Order\Status\History\CollectionFactory does not exist {"report_id":"89410aad74e6ef674f2233bfcf9a8e0dbdbe3d6b28c1eee5a5b4235dfba3f0b5","exception":"[object] (ReflectionException(code: 0): Class Magento\\Sales\\Model\\ResourceModel\\Order\\Status\\History\\CollectionFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:43, ReflectionException(code: 0): Class Magento\\Sales\\Model\\ResourceModel\\Order\\Status\\History\\CollectionFactory does not exist at /var/www/html/magento2/vendor/magento/framework/Code/Reader/ClassReader.php:36)"} []
+[2021-02-05 12:31:41] main.CRITICAL: Element 'block', attribute 'remove': The attribute 'remove' is not allowed.
+Line: 1186
+ {"exception":"[object] (Magento\\Framework\\Config\\Dom\\ValidationException(code: 0): Element 'block', attribute 'remove': The attribute 'remove' is not allowed.
+Line: 1186
+ at /var/www/html/magento2/vendor/magento/framework/Config/Dom.php:461)"} []

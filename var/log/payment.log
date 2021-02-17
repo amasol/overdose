@@ -1,0 +1,51 @@
+[2021-01-15 16:58:02] main.DEBUG: array (
+  'request' => 
+  array (
+    'TXN_TYPE' => 'A',
+    'INVOICE' => '000000003',
+    'AMOUNT' => 116.0,
+    'CURRENCY' => 'USD',
+    'EMAIL' => 'amasol@student.unit.ua',
+    'MERCHANT_KEY' => '****',
+    'FORCE_RESULT' => 1,
+  ),
+  'response' => 
+  array (
+    'RESULT_CODE' => 1,
+    'TXN_ID' => '735b90b4568125ed6c3f678819b6e058',
+  ),
+) [] []
+[2021-01-18 14:31:50] main.DEBUG: array (
+  'request' => 
+  array (
+    'TXN_TYPE' => 'A',
+    'INVOICE' => '000000004',
+    'AMOUNT' => 116.0,
+    'CURRENCY' => 'USD',
+    'EMAIL' => 'andreymasolu@gmail.com',
+    'MERCHANT_KEY' => '****',
+    'FORCE_RESULT' => 1,
+  ),
+  'response' => 
+  array (
+    'RESULT_CODE' => 1,
+    'TXN_ID' => 'd1c38a09acc34845c6be3a127a5aacaf',
+  ),
+) [] []
+[2021-01-18 16:19:09] main.DEBUG: array (
+  'request' => 
+  array (
+    'TXN_TYPE' => 'A',
+    'INVOICE' => '000000005',
+    'AMOUNT' => 227.0,
+    'CURRENCY' => 'USD',
+    'EMAIL' => 'amasol@student.unit.ua',
+    'MERCHANT_KEY' => '****',
+    'FORCE_RESULT' => 1,
+  ),
+  'response' => 
+  array (
+    'RESULT_CODE' => 1,
+    'TXN_ID' => '9461cce28ebe3e76fb4b931c35a169b0',
+  ),
+) [] []

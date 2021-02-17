@@ -1,0 +1,32 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1613563266;s:6:"expire";i:1613566866;s:4:"tags";s:257:"4cf_BLOCK_HTML,4cf_CAT_P_644,4cf_CAT_P,4cf_CAT_P_629,4cf_CAT_P_630,4cf_CAT_P_631,4cf_CAT_P_632,4cf_CAT_P_633,4cf_CAT_P_634,4cf_CAT_P_635,4cf_CAT_P_636,4cf_CAT_P_637,4cf_CAT_P_638,4cf_CAT_P_639,4cf_CAT_P_640,4cf_CAT_P_641,4cf_CAT_P_642,4cf_CAT_P_643,4cf_MAGE";}
+<div class="swatch-opt-644"
+     data-role="swatch-option-644"></div>
+
+<script type="text/x-magento-init">
+    {
+        "[data-role=swatch-option-644]": {
+            "Magento_Swatches/js/swatch-renderer": {
+                "selectorProduct": ".product-item-details",
+                "onlySwatches": true,
+                "enableControlLabel": false,
+                "numberToShow": 16,
+                "jsonConfig": {"attributes":{"142":{"id":"142","code":"size","label":"Size","options":[{"id":"9761","label":"XS","products":["629","630","631"]},{"id":"9762","label":"S","products":["632","633","634"]},{"id":"9763","label":"M","products":["635","636","637"]},{"id":"9764","label":"L","products":["638","639","640"]},{"id":"9765","label":"XL","products":["641","642","643"]}],"position":"0"},"93":{"id":"93","code":"color","label":"Color","options":[{"id":"9496","label":"Gray","products":["629","632","635","638","641"]},{"id":"9500","label":"Orange","products":["630","633","636","639","642"]},{"id":"9502","label":"Red","products":["631","634","637","640","643"]}],"position":"1"}},"template":"$<%- data.price %>","currencyFormat":"$%s","optionPrices":{"629":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"630":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"631":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"632":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"633":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"634":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"635":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"636":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"637":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"638":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"639":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"640":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"641":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"642":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}},"643":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29},"tierPrices":[],"msrpPrice":{"amount":null}}},"priceFormat":{"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false},"prices":{"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29}},"productId":"644","chooseText":"Choose an Option...","images":[],"index":{"629":{"142":"9761","93":"9496"},"630":{"142":"9761","93":"9500"},"631":{"142":"9761","93":"9502"},"632":{"142":"9762","93":"9496"},"633":{"142":"9762","93":"9500"},"634":{"142":"9762","93":"9502"},"635":{"142":"9763","93":"9496"},"636":{"142":"9763","93":"9500"},"637":{"142":"9763","93":"9502"},"638":{"142":"9764","93":"9496"},"639":{"142":"9764","93":"9500"},"640":{"142":"9764","93":"9502"},"641":{"142":"9765","93":"9496"},"642":{"142":"9765","93":"9500"},"643":{"142":"9765","93":"9502"}}},
+                "jsonSwatchConfig": {"142":{"9761":{"type":"0","value":"XS","label":"XS"},"9762":{"type":"0","value":"S","label":"S"},"9763":{"type":"0","value":"M","label":"M"},"9764":{"type":"0","value":"L","label":"L"},"9765":{"type":"0","value":"XL","label":"XL"},"additional_data":"{\"swatch_input_type\":\"text\",\"update_product_preview_image\":1,\"use_product_image_for_swatch\":0}"},"93":{"9496":{"type":"1","value":"#8f8f8f","label":"Gray"},"9500":{"type":"1","value":"#eb6703","label":"Orange"},"9502":{"type":"1","value":"#ff0000","label":"Red"},"additional_data":"{\"swatch_input_type\":\"visual\",\"update_product_preview_image\":1,\"use_product_image_for_swatch\":0}"}},
+                "mediaCallback": "http\u003A\u002F\u002Fmagento2.loc\u002Fswatches\u002Fajax\u002Fmedia\u002F",
+                "jsonSwatchImageSizeConfig": {"swatchImage":{"width":30,"height":20},"swatchThumb":{"height":90,"width":110}},
+                "showTooltip": 1            }
+        }
+    }
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "[data-role=priceBox][data-price-box=product-id-644]": {
+            "priceBox": {
+                "priceConfig": {
+                    "priceFormat": {"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false},
+                    "prices": {"oldPrice":{"amount":29},"basePrice":{"amount":29},"finalPrice":{"amount":29}}                }
+            }
+        }
+    }
+</script>

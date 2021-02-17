@@ -1,0 +1,24 @@
+<?php /** @var \Overdose\LessonTwo\ViewModel\customModel $view */ ?>
+<?php $view = $this->getData('viewM'); ?>
+
+<?//= $view->model_m() . "\n" ?>
+
+<!-- --><?php //$view->saveNewFriend('Ivan', '35', 'komentar i am here') ?>
+
+<?php //$view->lessonThree('Petka', '25', 'rabotaem dali') ?>
+
+<?php //foreach ($view->lessonThree() as $bestF): ?>
+<!--    --><?php //echo "|". $bestF->getData('id'); ?>
+<!--    --><?php //echo "|". $bestF->getData('age'); ?>
+<!--    --><?php //echo "|". $bestF->getData('name'); ?>
+<!--    --><?php //echo "|". $bestF->getData('notes'); ?>
+<!--    --><?php //echo "|". $bestF->getData('created_at'); ?>
+<!--    <br/>-->
+<?php //endforeach; ?>
+
+<?php $friendId = 5?>
+
+<?= $view->getFriendName($friendId) ?>
+<?//= $view->getFriendComment($friendId) ?>
+
+<!--<span>--><?//= $view->getMyFriendName(1); ?><!--</span>-->
